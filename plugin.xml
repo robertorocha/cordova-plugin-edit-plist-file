@@ -62,9 +62,9 @@
 	    
 	    
 	<config-file target="*-Info.plist" parent="NSContactsUsageDescription">
-            <dict>
-                <string>This app requires contacts access to function properly.</string>
-            </dict>
+            
+        	<string>This app requires contacts access to function properly.</string>
+            
         </config-file>
         
         
