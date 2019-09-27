@@ -63,8 +63,7 @@
 	    
 	<config-file target="*-Info.plist" parent="NSContactsUsageDescription">
             <dict>
-                <key>NSAllowsContactsUsageDescription</key>
-                <true/> 
+                <string>This app requires contacts access to function properly.</string>
             </dict>
         </config-file>
         
