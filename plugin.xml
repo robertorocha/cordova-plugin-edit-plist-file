@@ -31,7 +31,7 @@
     <platform name="ios">
         
         <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+        <!--<config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
                 <string>twitter</string>
                 <string>fb</string>
@@ -45,10 +45,27 @@
                 <string>smartcontinente</string>
                 <string>tiravez</string>
                 <string>appuniverso</string>
-				<string>appuniverso</string>
-				<string>https://app.kfc.pt/</string>
-				<string>continentesiga</string>
+		<string>appuniverso</string>
+		<string>https://app.kfc.pt/</string>
+		<string>continentesiga</string>
             </array>
+        </config-file>-->
+	    
+	<config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+               
+            </dict>
+        </config-file>
+	    
+	    
+	    
+	<config-file target="*-Info.plist" parent="NSContactsUsageDescription">
+            <dict>
+                <key>NSAllowsContactsUsageDescription</key>
+                <true/> 
+            </dict>
         </config-file>
         
         
