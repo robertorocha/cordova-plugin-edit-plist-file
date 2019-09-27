@@ -61,7 +61,7 @@
 	    
 	    
 	    
-	<config-file target="*-Info.plist" parent="NSContactsUsageDescription">
+	<config-file target="*-Info.plist" parent="NSContactsUsageDescription" mode="merge">
             
         	<string>This app requires contacts access to function properly.</string>
             
