@@ -63,7 +63,13 @@
 	    
 	<config-file target="*-Info.plist" parent="NSContactsUsageDescription" mode="merge">
             
-        	<string>This app requires contacts access to function properly.</string>
+        	<string>This app requires contacts access to function properly (meu).</string>
+            
+        </config-file>
+
+	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription" mode="merge">
+            
+        	<string>This app requires contacts access to Bluetooth (meu).</string>
             
         </config-file>
         
