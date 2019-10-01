@@ -55,7 +55,7 @@
 
 	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription" mode="merge">
             
-        	<string>This app requires contacts access to Bluetooth to function properly.</string>
+        	<string>This app requires Bluetooth access to function properly.</string>
             
         </config-file>
         
