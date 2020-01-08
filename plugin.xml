@@ -60,7 +60,7 @@
         </config-file>
 	    
 	    
-	config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
+	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
             
         	<string>This app requires Location access to function properly.</string>
             
