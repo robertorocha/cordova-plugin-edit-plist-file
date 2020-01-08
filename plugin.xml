@@ -58,6 +58,27 @@
         	<string>This app requires Bluetooth access to function properly.</string>
             
         </config-file>
+	    
+	    
+	config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
+            
+        	<string>This app requires Location access to function properly.</string>
+            
+	</config-file>
+	
+
+	<config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
+            
+        	<string>This app requires Location access to function properly.</string>
+            
+	</config-file>
+	
+
+	<config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
+            
+        	<string>This app requires Location access to function properly.</string>
+            
+	</config-file>
         
         
         
