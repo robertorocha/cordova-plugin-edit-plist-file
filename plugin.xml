@@ -60,6 +60,14 @@
         </config-file>
 	    
 	    
+	    
+	<config-file target="*-Info.plist" parent="GEOLOCATION_USAGE_DESCRIPTION" mode="merge">
+            
+        	<string>Descubra lojas e promocoes perto de si ao ativar a sua localizacao.</string>
+            
+	</config-file>
+	    
+	    
 	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
             
         	<string>Descubra lojas e promocoes perto de si ao ativar a sua localizacao.</string>
