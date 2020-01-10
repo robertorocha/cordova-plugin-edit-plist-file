@@ -63,11 +63,7 @@
 	 
 	    
 	    
-	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
-            
-        	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
-            
-	</config-file>
+	
 	
 
 	<config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
@@ -78,6 +74,13 @@
 	
 
 	<config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
+            
+        	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
+            
+	</config-file>
+	    
+	 
+	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
             
         	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
             
