@@ -85,11 +85,6 @@
         	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
             
 	</config-file>
-	    
-	
-	 <config-file target="*-Info.plist" parent="UIUserInterfaceStyle" mode="merge">
-		<string>Light</string>
-	 </config-file>
         
         
         
