@@ -54,13 +54,13 @@
 	    
 	    
 	<config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription" mode="merge">
-            <string>Esta app 3.</string>
+            <string>Descubra lojas e promoções perto de si ao ativar o Bluetooth.</string>
         </config-file>
 	   
 
 	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription" mode="merge">
             
-        	<string>Esta app 4.</string>
+        	<string>Descubra lojas e promoções perto de si ao ativar o Bluetooth.</string>
             
         </config-file>
 	    
