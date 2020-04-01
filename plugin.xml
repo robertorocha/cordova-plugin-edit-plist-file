@@ -51,11 +51,16 @@
             </array>
         </config-file>
 	    
+	    
+	    
+	<config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+            <string>Esta app 3.</string>
+        </config-file>
 	   
 
-	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription" mode="merge">
+	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
             
-        	<string>This app requires Bluetooth access to function properly.</string>
+        	<string>Esta app 4.</string>
             
         </config-file>
 	    
