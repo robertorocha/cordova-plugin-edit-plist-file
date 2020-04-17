@@ -52,42 +52,47 @@
         </config-file>
 	    
 	    
-	    
-	<config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription" mode="merge">
-            <string>Descubra lojas e promoções perto de si ao ativar o Bluetooth.</string>
-        </config-file>
-	   
-
-	<config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription" mode="merge">
+	<config-file target="*-Info.plist" parent="NSCalendarsUsageDescription" mode="merge">
             
-        	<string>Descubra lojas e promoções perto de si ao ativar o Bluetooth.</string>
+        	<string>A APP ZU gostaria de aceder ao seu calendário. O acesso ao seu calendário possibilita a associação e a visualização de eventos da APP ZU.</string>
             
         </config-file>
+		
+		
+		
+	<config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge">
+            
+        	<string>A APP ZU gostaria de aceder à sua câmara sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
+            
+        </config-file> 
+		
+	<config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription" mode="merge">
+            
+        	<string>A APP ZU gostaria de aceder à sua galeria de fotos sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
+            
+        </config-file> 	
+		
+		
 	    
-	   
-	 
-	    
-	    
-	
-	
-
 	<config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
             
-        	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
+        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
             
 	</config-file>
+	
 	
 
 	<config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
             
-        	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
+        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
             
 	</config-file>
 	    
+		
 	 
 	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
             
-        	<string>Descubra lojas e promoções perto de si ao ativar a sua localização.</string>
+        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
             
 	</config-file>
         
