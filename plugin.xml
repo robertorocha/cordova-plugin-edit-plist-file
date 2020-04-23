@@ -1,103 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-edit-plist-file"
-    version="0.0.3">
-    
-    <name>Edit Plist file</name>
-    
-    <description>
-        A cordova "plugin" that helps you indicate the modifications on the iOS's *-info.plist file.
-        So it avoids you to directly edit the *-info.plist file.
-        For example it is used to whitelist some schemes for ios9.
-        This plugin was initially created to avoid iOS 9 problems that prevent opening other apps from your own app because some used plugins aren't updated to take into consideration the new specification for iOS 9.
-    </description>
-
-    <author>Haythem OUEDERNI - haythem@nirbyapp.com </author>
-
-    <keywords>cordova,whitelist,ios9,ecosystem:cordova,ordova-ios</keywords>
-    
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-permissions" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>iOS Permissions</name>
+    <author>Andreas Jacob (http://cordobo.com/)</author>
+    <description>Cordova / PhoneGap Plugin Permission Settings for NSCameraUsageDescription, NSPhotoLibraryUsageDescription and NSMicrophoneUsageDescription in iOS 10 by adding a declaration to the Info.plist file</description>
+    <keywords>cordova, ios, app, security, permissions, nscamerausagedescription, nsphotolibraryusagedescription, nsmicrophoneusagedescription</keywords>
     <license>MIT</license>
-    
     <engines>
-        <!-- Requires > 3.3.* because of the custom Framework tag for iOS [CB-5238] -->
-        <!-- Requires > 3.5.0 because of the custom Framework tag for Android [CB-6698] -->
-        <engine name="cordova" version=">=3.5.0" />
+        <engine name="cordova" version=">=3.0.0"/>
     </engines>
-    
-    
-    
-    <!-- ios -->
     <platform name="ios">
-        
-        <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-                <string>lojacontinente</string>
-                <string>smartcontinente</string>
-                <string>tiravez</string>
-                <string>appuniverso</string>
-		<string>https://app.kfc.pt/</string>
-		<string>continentesiga</string>
-		<string>galp</string>
-            </array>
-        </config-file>
-	    
-	    
-	<config-file target="*-Info.plist" parent="NSCalendarsUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder ao seu calendário. O acesso ao seu calendário possibilita a associação e a visualização de eventos da APP ZU.</string>
-            
-        </config-file>
-		
-		
-		
-	<config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder à sua câmara sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
-            
-        </config-file> 
-		
-	<config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder à sua galeria de fotos sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
-            
-        </config-file> 	
-		
-		
-	    
-	<config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
-            
-	</config-file>
-	
-	
-
-	<config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
-            
-	</config-file>
-	    
-		
-	 
-	<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
-            
-        	<string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
-            
-	</config-file>
-        
-        
-        
+      <config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
+          <string>A APP ZU gostaria de aceder ao seu calendário. O acesso ao seu calendário possibilita a associação e a visualização de eventos da APP ZU.</string>
+      </config-file>
+      <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+          <string>A APP ZU gostaria de aceder à sua câmara sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
+      </config-file>
+      <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+          <string>A APP ZU gostaria de aceder à sua galeria de fotos sempre que pretenda publicar uma fotografia no perfil do seu animal.</string>
+      </config-file>        
+      <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+          <string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
+      </config-file>        
+      <config-file target="*-Info.plist" parent="NSLocationUsageDescription">
+          <string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
+      </config-file>        
+      <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+          <string>A APP ZU gostaria de aceder à sua localização, caso necessite de saber qual é a loja ZU mais perto de si.</string>
+      </config-file>        
     </platform>
-    
 </plugin>
